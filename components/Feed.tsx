@@ -6,21 +6,21 @@ import FriendsCard from './UpComing/FriendsCard'
 import UpcomingTrip from './UpComing/UpcomingTrip'
 
 const styles = {
-  wrapper: `w-full h-full bg-[#010101]`,
+  wrapper: `w-full h-full flex flex-col overflow-y-scroll bg-[#010101]`,
 }
 
 const Feed = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <div className=" flex h-full w-full flex-col items-center overflow-hidden  overflow-y-scroll pb-10 lg:h-[600px]    xl:flex-row">
+      <div className=" flex   w-full flex-col items-center pb-10 lg:h-[600px]    xl:flex-row">
         <UpcomingTrip />
         <TravelMap />
         <FriendsCard />
       </div>
 
       {/* Explore Trips */}
-      <div>
+      <div className=" p-10">
         <Explore />
       </div>
     </div>

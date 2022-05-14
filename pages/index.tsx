@@ -7,7 +7,7 @@ import SideBar from '../components/sideBar'
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen w-full select-none overflow-hidden ">
+    <div className="h-screen w-full  overflow-hidden ">
       <Head>
         <title>Travel</title>
         <link rel="icon" href="/favicon.ico" />

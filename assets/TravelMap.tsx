@@ -1,13 +1,9 @@
 import React from 'react'
 import MapBox from '../components/MapBox'
-
-import { Rating } from 'primereact/rating'
 import { Toronto } from './Trip.asset'
-import { AiFillStar } from 'react-icons/ai'
-import { FaStar } from 'react-icons/fa'
 
 const styles = {
-  wrapper: 'p-10 h-full    ',
+  wrapper: 'p-10 h-full     ',
   title: 'text-4xl text-gray-300',
 }
 
@@ -16,7 +12,7 @@ const TravelMap = () => {
   return (
     <div className={styles.wrapper}>
       <span className={styles.title}>Travel Map</span>
-      <div className="center mt-4 h-full w-[400px] max-w-[400px] flex-col overflow-hidden  rounded-xl bg-[#121418] ">
+      <div className="center mt-4 h-full w-[400px] max-w-[400px]  flex-col overflow-hidden  rounded-xl bg-[#121418] ">
         <MapBox />
         <SmallCard description={description} />
       </div>
