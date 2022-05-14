@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.center {
+  @apply flex items-center  justify-center;
+}
+
+.avatar_lg {
+  @apply h-12 w-12 rounded-full;
+}
+
+.animate {
+  @apply transform transition-all duration-200 ease-in;
+}
+
+.hotel_img {
+  height: 100px;
+}
+.stars {
+  color: #ffc107;
+}
