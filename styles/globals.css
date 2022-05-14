@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #010101;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .center {
   @apply flex items-center  justify-center;
 }

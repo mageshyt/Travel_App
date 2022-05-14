@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 import { getCenter } from 'geolib'
 const style = {
-  wrapper: '  h-[60%] my-4 overflow-hidden w-[90%] rounded-2xl',
+  wrapper: '  h-[60%] my-4 overflow-hidden w-[94%] rounded-2xl',
 }
 
 const MapBox = () => {

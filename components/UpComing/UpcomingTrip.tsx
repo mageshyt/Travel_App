@@ -11,6 +11,8 @@ const styles = {
   TorontoImage: 'h-[200px]  w-[250px] rounded-lg shadow-lg',
   btn: 'animate flex cursor-pointer items-center space-x-2 rounded-3xl bg-[#262629] p-2 text-white  hover:scale-110',
   bookText: ' font-semibold text-[#2150E8]',
+  CardContainer:
+    'mt-4 flex max-w-[800px] lg:w-[800px] lg:flex-row items-center space-x-3 rounded-xl bg-[#121418] p-10 flex-col',
 }
 const UpcomingTrip = () => {
   const { name, imageUrl, description } = Toronto
@@ -27,10 +29,10 @@ const UpcomingTrip = () => {
     return <img src={item.thumbnailImageSrc} alt="" />
   }
   return (
-    <div className="p-10">
+    <div className="  p-10">
       <div className={styles.title}>Upcoming Trip</div>
       {/* Toronto Tower */}
-      <div className="mt-4 flex w-[800px] space-x-3 rounded-xl bg-[#121418] p-10">
+      <div className={styles.CardContainer}>
         {/* left side image */}
         <div>
           <Galleria
